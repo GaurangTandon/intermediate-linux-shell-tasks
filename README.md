@@ -4,6 +4,10 @@ I use the shell fairly confidently when dealing with everyday tasks. I have doze
 
 # `du`
 
+## Best `du` command
+
+Using only `du` gives you recursive unreadable output. `du -h` gets you human-readable file sizes. `du -h --max-depth=1` will restrict the recursive output, but not show the files (only directories). Hence, `du -sh` is the best, `-s`ummarize shows both top-level files and folders!
+
 ## Sort `du -h` output by size
 
 `du -h ... | sort -h`: `sort` takes an argument `-h` which is suitable for handling the human-readable file sizes.
