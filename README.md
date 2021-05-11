@@ -6,7 +6,9 @@ I use the shell fairly confidently when dealing with everyday tasks. I have doze
 
 ## Best `du` command
 
-Using only `du` gives you recursive unreadable output. `du -h` gets you human-readable file sizes. `du -h --max-depth=1` will restrict the recursive output, but not show the files (only directories). Hence, `du -sh` is the best, `-s`ummarize shows both top-level files and folders!
+Using only `du` gives you recursive unreadable output. `du -h` gets you human-readable file sizes. `du -h --max-depth=1 <dir>` will restrict the recursive output, but not show the files (only directories). Hence, `du -sh <dir>/*` is the best, `-s`ummarize shows both top-level files and folders!
+
+But, do note that the max-depth method shows you the total directory size by default. In the summarize method, you need to separately call `du -sh <dir>` to get total directory size.
 
 ## Sort `du -h` output by size
 
