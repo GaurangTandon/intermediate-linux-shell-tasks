@@ -32,3 +32,8 @@ How to pass them to `rm -r`? need to use `xargs`/`find`?
 # `xargs`
 
 Good resource to learn: [TODO]
+
+# Bash/Zsh
+
+1. In Bash, `echo a; ;` is parse error whereas in zsh it's fine. Therefore, in bash you need `echo a & echo b &` when using `&` whereas in Zsh `echo a & ; echo b & ;` works fine.
+2. In shell script, use `echo "${@:1}" to access arguments from 1st to last.
